@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  int N, max=0, p=0, i;
+  
+ Scanner input=new Scanner(System.in);
+ 
+ for(i=1; i<=100; i++)
+ {
+	 N=input.nextInt();
+	 
+	if(max > N)
+	{
+		max = max;
+		p = p;
+	}
+	else
+	{
+		max = N;
+	    p = i;
+	}
+	 
+ }
+ System.out.print(max+"\n" +p+"\n");
+ 
+ 
+ }
+}

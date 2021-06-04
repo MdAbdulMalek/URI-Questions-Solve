@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	    float X, flag=0, sum=0, add=0;
+	    int A=0;
+	    
+	    Scanner input = new Scanner(System.in);
+	   
+	    while(flag!=1)
+	    {
+	    	X=input.nextFloat();
+	    	if(X>=0 && X<=10)
+	    	{
+	    		sum=sum+1;
+	    		add=add+X;
+	    		if(sum==2)
+	    		{
+	    			System.out.printf("media = %.2f\n", (add/2.0));
+	    			System.out.print("novo calculo (1-sim 2-nao)\n");
+	    			
+
+	    			while(A!=1 || A!=2)
+	    			{
+	    				A=input.nextInt();
+	    				if(A==2)
+		    			{
+		    			flag=1;
+		    			break;
+		    			}
+		    			else if(A==1)
+		    			{
+		    				sum=0;
+		    				add=0;
+		    				break;
+		    			}
+		    			else
+		    			{
+		    				System.out.print("novo calculo (1-sim 2-nao)\n");
+			    			sum=0;
+			    			
+		    			}
+	    			
+	    			}
+	    			if(A==2)
+	    			{
+	    			flag=1;
+	    			}
+	    			else if(A==1)
+	    			{
+	    				sum=0;
+	    				add=0;
+	    			}
+	    			
+	    		}
+	    	}
+	    	else
+	    	{
+	    		System.out.print("nota invalida\n");
+	    		
+	    	}
+	     }
+	    	
+	    }		    	
+   }
+   

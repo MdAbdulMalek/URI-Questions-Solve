@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int A, B, C;
+		A=input.nextInt();
+		B=input.nextInt();
+		C=input.nextInt();
+		int temp=A; 
+		if(A<B || A<C)
+		{
+			if(B<C)
+			{
+			temp=C;
+			}
+		else 
+		  {
+			temp=B;
+		  }
+		}
+	
+		  System.out.printf("%d eh o maior\n",temp);
+			
+
+	}
+
+}

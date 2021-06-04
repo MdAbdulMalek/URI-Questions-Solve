@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	  Scanner input=new Scanner(System.in);  
+	   int N, sum=0, j, k, flag=0;
+	   	   
+	   while(flag!=1)
+	   {
+		   N=input.nextInt();
+		   	   
+		  if(N==0)
+		  {
+			  flag=1;
+		  }
+		  else
+		  {
+	
+          for(j=N, k=1; k<=5; j++)
+		  {
+			  if(j%2==0)
+			  {
+				  sum=sum+j;
+				  k++;
+				  
+			  }
+		 
+	     }
+          System.out.printf("%d\n", sum);
+		  k=0;
+		  sum=0;
+		          
+		  }
+		  
+	   }
+	   	   
+	}
+   }
+ 

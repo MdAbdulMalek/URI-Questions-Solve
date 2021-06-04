@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  double  A, B, C, min1, min2=0, min3=0;
+  Scanner input =new Scanner(System.in);
+  A=input.nextDouble();
+  B=input.nextDouble();
+  C=input.nextDouble();
+ 
+  min1=Math.min(A, Math.min(B, C));
+  if(min1==A)
+  {
+	  min2=Math.min(B, C);
+	  min3=Math.max(B, C);
+  }
+  if(min1==B)
+  {
+	  min2=Math.min(A, C);
+	  min3=Math.max(A, C);
+  }
+  if(min1==C)
+  {
+	  min2=Math.min(A, B);
+	  min3=Math.max(A, B);
+  }
+  
+  A=min3;
+  B=min2;
+  C=min1;
+  
+  if(A>=B+C)
+  {
+	  System.out.printf("NAO FORMA TRIANGULO\n");
+  }
+  else if((A*A)==(B*B)+(C*C))
+  {
+	  System.out.printf("TRIANGULO RETANGULO\n");
+  }
+  else if((A*A)>(B*B)+(C*C))
+  {
+	  System.out.printf("TRIANGULO OBTUSANGULO\n");
+  }
+  else if((A*A)<(B*B)+(C*C))
+  {
+	  System.out.printf("TRIANGULO ACUTANGULO\n");
+  }
+  
+  if(A==B && B==C)
+  {
+	  System.out.printf("TRIANGULO EQUILATERO\n");
+  }
+  if(((A==B) && (A!=C)) || ((B==C) && (B!=A)) || ((A==C) && (A!=B)) )
+  {
+	  System.out.printf("TRIANGULO ISOSCELES\n");
+  }
+   
+
+ }
+
+
+}

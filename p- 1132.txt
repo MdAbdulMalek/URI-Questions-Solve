@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	    int X, Y, i, sum=0, temp;
+	    
+	    
+	    Scanner input = new Scanner(System.in);
+	  
+	    	X=input.nextInt();
+	    	Y=input.nextInt();
+	    	if(X>Y)
+	    	{
+	    		temp=X;
+	    		X=Y;
+	    		Y=temp;
+	    		for(i=X; i<=Y; i++)
+		    	{
+		    		if(i%13!=0)
+		    		{
+		    			sum=sum+i;
+		    		}
+		    	}
+	    	}
+	    	
+	    	else
+	    	{
+	    	for(i=X; i<=Y; i++)
+	    	{
+	    		if(i%13!=0)
+	    		{
+	    			sum=sum+i;
+	    		}
+	    	}
+	    	}
+	    	System.out.printf("%d\n", sum);
+	    	
+	    }		    	
+   }
+   

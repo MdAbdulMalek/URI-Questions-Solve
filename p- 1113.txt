@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	    int  X=0, Y=1;
+
+	    Scanner input = new Scanner(System.in);
+	    while( X!=Y ) {
+	    	X=input.nextInt();
+	    	Y=input.nextInt();
+	    	if(X>0 && Y>0)
+	    	{
+	          if(X<Y)
+	    	{
+	    		System.out.print("Crescente\n");
+	    	}
+	    	else if(X>Y)
+	    	{
+	    		System.out.print("Decrescente\n");
+	    	}
+	    	}
+	    }	
+	    	
+   }
+   }
+

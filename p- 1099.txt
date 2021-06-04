@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	    int N, X, Y, sum=0, i, j, temp;
+
+	    Scanner input = new Scanner(System.in);
+	    
+	    N=input.nextInt();
+	    
+	    for(i=1; i<=N; i++)
+	    {
+	    	X=input.nextInt();
+	    	Y=input.nextInt();
+	    	
+	    	if(X>Y)
+	    	{
+	    		temp=X;
+	    		X=Y;
+	    		Y=temp;
+	    		
+	    		for(j=X+1; j<Y; j++)
+	    		{
+	    			if(j%2!=0)
+	    			{
+	    				sum=j+sum;
+	    			}
+	    		}
+	    		System.out.printf("%d\n", sum);
+	    		sum=0;
+	    	}
+	    	else
+	    	{
+	    		for(j=X+1; j<Y; j++)
+	    		{
+	    			if(j%2!=0)
+	    			{
+	    				sum=j+sum;
+	    			}
+	    		}
+	    		System.out.printf("%d\n", sum);
+	    		sum=0;
+	    	}
+	    		
+	    	
+	    }
+	    
+	    }
+	  }

@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		int   A, B, D, E;
+		double C, F;
+		A=input.nextInt();
+		B=input.nextInt();
+		C=input.nextDouble();
+		D=input.nextInt();
+		E=input.nextInt();
+		F=input.nextDouble();
+		System.out.printf("VALOR A PAGAR: R$ %.2f\n",((B*C)+(E*F)));
+		
+
+	}
+
+}

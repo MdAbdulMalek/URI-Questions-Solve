@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	    int X, Y, i, temp;
+	    
+	    
+	    Scanner input = new Scanner(System.in);
+	  
+	    	X=input.nextInt();
+	    	Y=input.nextInt();
+	    	if(X>Y)
+	    	{
+	    		temp=X;
+	    		X=Y;
+	    		Y=temp;
+	    		for(i=X+1; i<Y; i++)
+		    	{
+		    		if(((i+2)%5)==0 || ((i+3)%5)==0)
+		    		{
+		    			System.out.printf("%d\n", i);
+		    		}
+		    	}
+	    	}
+	    	
+	    	else
+	    	{
+	    	for(i=X+1; i<Y; i++)
+	    	{
+	    		if(((i+2)%5)==0 || ((i+3)%5)==0)
+	    		{
+	    			System.out.printf("%d\n", i);
+	    		}
+	    	}
+	    	}
+	    	
+	    	
+	    }		    	
+   }
+   
+

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  int X, i;
+  
+  
+ Scanner input=new Scanner(System.in);
+ 
+ X=input.nextInt();
+ for (i=X; i<=X+11; i++)
+ {
+	 
+	 if(i%2!=0) {
+	 System.out.printf("%d\n", i);
+	 }
+ }
+ 
+ }
+}

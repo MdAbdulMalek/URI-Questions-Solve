@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  int N, Y, i;
+  
+  
+ Scanner input=new Scanner(System.in);
+ 
+ N=input.nextInt();
+ 
+ for(i=1; i<=N; i++)
+ {
+	 if(i%2==0)
+	 {
+		 Y=(int) Math.pow(i, 2);
+		 System.out.printf("%d^2 = %d\n", i, Y);
+	 }
+ }
+ 
+ }
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  int A;
+  int i=5, even=0;
+  
+ Scanner input=new Scanner(System.in);
+ 
+ while(i!=0)
+ {
+	 A=input.nextInt();
+	 i--;
+	 if(A%2==0) {
+		 even++; 
+	 }	
+	
+ }
+ System.out.printf("%d valores pares\n", even);
+ }
+}

@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	    int X, Y, i, temp, flag=0, al=0, gaso=0, Dise=0;
+	    
+	    
+	    Scanner input = new Scanner(System.in);
+	  
+	    	while(flag!=1)
+	    	{
+	    		X=input.nextInt();
+	    		
+	    		if(X>=1 && X<=4)
+	    		{
+	    			if(X==1)
+	    			{
+	    				al=al+1;
+	    			}
+	    			if(X==2)
+	    			{
+	    				gaso=gaso+1;
+	    			}
+	    			if(X==3)
+	    			{
+	    				Dise=Dise+1;
+	    			}
+	    			if(X==4)
+	    			{
+	    				System.out.print("MUITO OBRIGADO\n");
+	    				System.out.printf("Alcool: %d\n", al);
+	    				System.out.printf("Gasolina: %d\n", gaso);
+	    				System.out.printf("Diesel: %d\n", Dise);
+	    				flag=1;
+	    			}
+	    		}
+	    		else
+	    		{
+	    			flag=0;
+	    		}
+	    	}
+	    	
+	    	
+	    }		    	
+   }
+   

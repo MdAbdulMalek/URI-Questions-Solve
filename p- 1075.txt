@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  int N, i;
+  
+  
+ Scanner input=new Scanner(System.in);
+ 
+ N=input.nextInt();
+ 
+ for(i=0; i<10000; i++)
+ {
+	
+	 if(i%N==0) {
+	 System.out.printf("%d\n", i+2);
+	 }
+ }
+ 
+ }
+}

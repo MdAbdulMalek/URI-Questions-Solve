@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	  Scanner input=new Scanner(System.in);  
+	   int N, i, X, Y, sum=0, j, k;
+	    
+	   N=input.nextInt();
+	   
+	   
+	   for(i=1; i<=N; i++)
+	   {
+		  X=input.nextInt();
+		  Y=input.nextInt();
+		  
+		  for(j=X, k=1; k<=Y; j++)
+		  {
+			  if(j%2!=0)
+			  {
+				  sum=sum+j;
+				  k++;
+				  
+			  }
+			  
+		  }
+		  System.out.printf("%d\n", sum);
+		  k=0;
+		  sum=0;
+	   }
+    
+	   
+	   
+	}
+   }
+ 

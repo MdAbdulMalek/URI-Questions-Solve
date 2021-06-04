@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  int N, Y, i;
+  
+  
+ Scanner input=new Scanner(System.in);
+ 
+ N=input.nextInt();
+ 
+ for(i=1; i<=N; i++)
+ {
+	 Y=input.nextInt();
+	 if(Y%2==0 && Y>0)
+	 {
+		 System.out.print("EVEN POSITIVE\n");
+	 }
+	 if(Y%2==0 && Y<0)
+	 {
+		 System.out.print("EVEN NEGATIVE\n");
+	 }
+	 if(Y%2!=0 && Y<0)
+	 {
+		 System.out.print("ODD NEGATIVE\n");
+	 }
+	 if(Y%2!=0 && Y>0)
+	 {
+		 System.out.print("ODD POSITIVE\n");
+	 }
+	 if(Y==0)
+	 {
+		 System.out.print("NULL\n");
+	 }
+	 
+ }
+ 
+ }
+}

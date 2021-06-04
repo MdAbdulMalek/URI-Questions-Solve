@@ -1,0 +1,43 @@
+package Previous;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		int  A, B, temp;
+		  Scanner input =new Scanner(System.in);
+		  A=input.nextInt();
+		  B=input.nextInt();
+		  
+		  if(A>B)
+		  {
+		    temp=A;
+		    A=B;
+		    B=temp;
+		    if(B%A==0)
+		    {
+		    	System.out.printf("Sao Multiplos\n");
+		    }
+		    else
+		    {
+		    	 System.out.printf("Nao sao Multiplos\n");
+		    }
+		  }
+		  else
+		  {
+			  if(B%A==0)
+			    {
+			    	System.out.printf("Sao Multiplos\n");
+			    }
+			    else
+			    {
+			    	 System.out.printf("Nao sao Multiplos\n");
+			    } 
+		  }
+		
+	 
+		
+	}
+
+}

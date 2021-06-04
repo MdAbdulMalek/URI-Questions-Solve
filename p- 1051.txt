@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  float A, X, P, Q;
+  Scanner input =new Scanner(System.in);
+  A=input.nextFloat();
+  X=A-2000;
+  if(A>0.00 && A<=2000.00)
+  {
+	  System.out.printf("Isento\n");
+  }
+  else if(A>=2000.01 && A<=3000.00)
+  {
+	  System.out.printf("R$ %.2f\n", (X*8)/100);
+  }
+  else if(A>=3000.01 && A<=4500.00)
+  {
+	  P=X-1000;
+	  System.out.printf("R$ %.2f\n", (80+((P*18)/100)));
+  }
+  else if(A>4500.00)
+  {
+	  Q=X-2500;
+	  System.out.printf("R$ %.2f\n", (80+270+((Q*28)/100)));
+  }
+
+  
+ }
+
+}
+

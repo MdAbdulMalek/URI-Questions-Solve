@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	    int A, flag=0, count=0;
+	    float ans=0;
+	    
+	    Scanner input = new Scanner(System.in);
+	    
+	    while(flag!=1)
+	    {
+	    	
+	    A=input.nextInt();
+ 
+	    if(A>0)
+	    {
+	    	ans=ans+A;
+	    	count++;
+	    	
+	    }
+	    else
+	    {
+	    	flag=1;
+	    }
+	    
+	    
+	    }
+	    System.out.printf("%.2f\n", ans/count);
+	}
+   }
+ 
+

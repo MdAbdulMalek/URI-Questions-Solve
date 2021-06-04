@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+	  Scanner input=new Scanner(System.in);  
+	   int T, PA, PB, i, count=0, P1, P2;
+	   float A=0, B=0;
+	   float G1, G2;
+	   
+	   T=input.nextInt();
+	   
+	   for(i=1; i<=T; i++)
+	   {
+		   PA=input.nextInt();
+		   PB=input.nextInt();
+		   G1=input.nextFloat();
+		   G2=input.nextFloat();
+			 while(PA<=PB)
+			 {
+				 P1=(int) ((PA*G1)/100); 
+				 P2=(int) ((PB*G2)/100);
+				 A=PA+P1;
+				 B=PB+P2;
+				 count++;
+				 PA= (int) A;
+				 PB= (int) B;
+			 }
+			   
+			 if(count<=100)
+			 {
+		   System.out.printf("%d anos.\n",count);
+			 }
+			 else
+			 {
+				 System.out.print("Mais de 1 seculo.\n");
+			 } 
+			 PA=0;
+			 PB=0;
+			 G1=0;
+			 G2=0;
+			 P1=0;
+			 P2=0;
+			 count=0;
+	   }
+	   	   
+	}
+   }
+ 
+
+

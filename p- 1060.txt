@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  double A;
+  int i=6, positive=0;
+  
+ Scanner input=new Scanner(System.in);
+ 
+ while(i!=0)
+ {
+	 A=input.nextDouble();
+	 i--;
+	 if(A>0) {
+		 positive++;
+		 
+	 }	
+	
+ }
+ System.out.printf("%d valores positivos\n", positive);
+ 
+ }
+}

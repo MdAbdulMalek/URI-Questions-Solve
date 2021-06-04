@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  int  A, B, C, D, H, M;
+  Scanner input =new Scanner(System.in);
+  A=input.nextInt();
+  B=input.nextInt();
+  C=input.nextInt();
+  D=input.nextInt();
+  H=C-A;
+  if(H<0)
+  {
+	  H=24+(C-A);
+  }
+  M=D-B;
+  if(M<0)
+  {
+	  M=60+(D-B);
+	  H--;
+  }
+  if(A==C && B==D)
+  {
+	  System.out.printf("O JOGO DUROU 24 HORA(S) E 0 MINUTO(S)\n");
+  }
+  else
+  {
+	  System.out.printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", H, M);
+  }
+ 
+ }
+
+}

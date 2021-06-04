@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+	
+	
+ public static void main(String[] args) {
+  int N;
+  float A, B, C, D;
+   
+ Scanner input=new Scanner(System.in);
+ 
+ N=input.nextInt();
+ 
+ for(int i=1; i<=N; i++)
+ {
+		A=input.nextFloat();
+		B=input.nextFloat();
+		C=input.nextFloat();
+		D=((A*2)+(B*3)+(C*5));
+		
+	 System.out.printf("%.1f\n", D/10); 
+ }
+ 
+ 
+ }
+}
